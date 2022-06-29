@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #242333;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  color:#f0ffff;
+}
+
+/* HEADER */
+
+h1{
+  text-align: center;
+  /* padding: 2rem; */
+  font-size: 3.8rem;
+}
+
+header p{
+  height: 25px;
+  text-align: center;
+}
+
+/* MAIN */
+
+main{
+  text-align: center;
+}
+
+.movie-select{
+  margin-bottom: 1rem;
+}
+
+select{
+  font-size: 1rem;
+}
+ /* MOVIE */
+
+.seat-info{
+  background-color: #2f2f42;
+}
+
+.seat-info li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.info{
+  display: inline-block;
+  margin: .1rem;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* SEATS */
+
+.seat{
+  width: 25px;
+  height: 20px;
+  background-color: #808080;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: inline-block;
+  margin: .1rem;
+  transition: transform .5s;
+}
+
+.selected{
+  background-color: #09adf3;
+  transition: transform .5s;
+}
+
+.occupied{
+  background-color: #ffffff;
+}
+
+.seat:not(.occupied, .static-selected, .static-seat):hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+
+.static-selected{
+  background-color: #09adf3;
+}
+
+.seat-container{
+  margin: 1rem;
+}
+
+.information{
+  margin-bottom: .7rem;
+}
+
+/* FOOTER */
+
+footer h4{
+  text-align: center;
+ 
+  color: #ff7645;
+}
+
+/* MEDIA */
+
+@media (min-width:600px){
+  img{
+    width: 500px;
+    height: 400px;
+    
+  }
+}
